@@ -67,41 +67,41 @@ class Note {
 	}
 };
 
-let entries;
-const loadEntries = () => {
-	entries.forEach(entry => {
-		newNote = new Note(entry.message, entry.date);
-		let newNode = document.createElement('div');
-		newNode.classList.add('text');
-		newNode.innerHTML = newNote.build();	
-		refWrap.appendChild(newNode);
-	});
-}
+// let entries;
+// const loadEntries = () => {
+// 	entries.forEach(entry => {
+// 		newNote = new Note(entry.message, entry.date);
+// 		let newNode = document.createElement('div');
+// 		newNode.classList.add('text');
+// 		newNode.innerHTML = newNote.build();	
+// 		refWrap.appendChild(newNode);
+// 	});
+// }
 
-fetch('http://localhost:3000/load-entries', {
-	method: 'post',
-	headers: {'Content-Type': 'application/json'},
-	body: JSON.stringify({
-		'id': '4',
-		'entries': 'entries'
-	})
-})
-.then(res => res.json())
-.then(data => {
-	if (data.length) {
-		const myData = data.replace(/[\\"{}]/g, '').split(",");
-		let dataArr = []; 
-		myData.forEach(i => {
-			dataArr.push(i.split(':'))
+// fetch('http://localhost:3000/load-entries', {
+// 	method: 'post',
+// 	headers: {'Content-Type': 'application/json'},
+// 	body: JSON.stringify({
+// 		'id': '4',
+// 		'entries': 'entries'
+// 	})
+// })
+// .then(res => res.json())
+// .then(data => {
+// 	if (data.length) {
+// 		const myData = data.replace(/[\\"{}]/g, '').split(",");
+// 		let dataArr = []; 
+// 		myData.forEach(i => {
+// 			dataArr.push(i.split(':'))
 			
-		});
-		console.log(dataArr)
-		//entries = data;
-		//loadEntries();
-	} else {
-		entries = [];
-	}
-})
+// 		});
+// 		console.log(dataArr)
+// 		//entries = data;
+// 		//loadEntries();
+// 	} else {
+// 		entries = [];
+// 	}
+// })
 
 addNoteTextarea.addEventListener('keyup', () => {
 	if (addNoteTextarea.value.length) {
