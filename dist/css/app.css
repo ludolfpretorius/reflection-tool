@@ -1,0 +1,46 @@
+* {font-family: 'Montserrat', 'Arial', sans-serif}
+
+body {height: 100vh; background-color: #eee}
+/*#2b3f4b*/
+/*#1576d4*/
+.signin-modal {display: block; width: 300px; margin: auto; text-align: center; padding: 10px 40px 40px; border-radius: 4px; position: absolute; top: 20%;  left: 0; right: 0; background-color: #fff; box-shadow: 0 1px 3px 0 rgba(21,27,38,.15);}
+
+a {color: #ccc; margin: 10px; display: inline-block;}
+
+input {display: block; margin: 0 auto 15px; height: 53px; line-height: 51px; padding: 0 20px; outline: none; font-size: 15px; color: #808080; margin: 0 0 16px 0; max-width: 100%; width: 100%; box-sizing: border-box; display: block; background-color: #fff; border: 1px solid #dbdbdb; box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.06); font-weight: 500; opacity: 1; border-radius: 3px;}
+button[type="submit"] {line-height: 26px; height: auto; min-width: 120px; margin-bottom: 0; background-color: #f91942; border: none; outline: none; border-radius: 4px; color: #fff; height: 53px; width: 100%}
+.hide {display: none;}
+
+hr {margin: 40px 0; border-top: none; border-color: #aaa;}
+h1 {margin-bottom: 10px;}
+h3 {font-weight: 300; margin: 0 0 40px; font-size: 16px;}
+
+
+.pad { box-shadow: 0 1px 3px 0 rgba(21,27,38,.15); background-color: #fff; display: block; border-radius: 4px; padding-top: 1px; overflow: hidden; width: 30%;margin: auto; margin-top: 100px}
+#reflectInput {font-size: 16px;}
+.text {margin-bottom: 40px;}
+.text:last-child {margin-bottom: 0}
+button {padding: 12px 22px; border: none; background-color: #f91942; color: #fff; border-radius: 4px; margin: 0 8px 0 0; cursor: pointer; outline: none;}
+#reflectSave, #reflectCancel, #reflectAppend {opacity: 0.4; pointer-events: none; transition: all 0.4s ease-in-out 0.1s; cursor: not-allowed;}
+#reflectSave.canSave, #reflectCancel.canSave, #reflectAppend.canSave {opacity: 1; pointer-events: all; transition: all 0.4s ease-in-out; cursor: pointer;}
+/* #reflectSave.canSave {background-color: #8BC34A; border-color: #8BC34A;} */
+#reflectAppend { background-color: transparent; color: #2f2f2f}
+#reflectDownload { background-color: transparent; color: #2f2f2f; margin-right: 0;}
+
+#reflectText {margin-bottom: 10px; transition: all 0.4s ease-in-out; overflow: hidden; position: relative; cursor: pointer; margin: 40px; min-height: 200px;}
+#reflectText #date {font-weight: 300; font-size: 12px; color: #9ca6af; margin-left: 8px}
+#reflectText #date span {font-weight: 300;}
+#reflectText #headingWrap {display: flex; align-items: center; margin-bottom: 10px;}
+#reflectText #heading {font-size: 15px; font-weight: 700; color: #151b26; margin-bottom: 0;}
+#reflectText p {margin: 0; font-size: 13px; font-weight: 400; letter-spacing: auto; color: #151b26; line-height: 20px;}
+
+#controlsWrap {padding: 20px 20px; background: #f6f8f9; border-top: 1px solid #e0e6e8; display: block;}
+textarea {resize: none; width: 95%; height: 41px; min-height: 42px; display: block; font-size: 13px; padding: 10px; font-weight: 400; line-height: 20px; border: 1px solid #d5dce0; border-radius: 4px; outline: none; margin-bottom: 10px; transition: all 0.4s ease-in-out;}
+textarea:focus {min-height: 100px; transition: all 0.4s ease-in-out; box-shadow: inset 1px 1px 2px #e0e6e8;}
+#btnsWrap {display: flex; justify-content: flex-start; transform: scaleY(1); overflow: hidden; transition: all 0.4s ease-in-out;}
+/*#btnsWrap.open { transform: scaleY(1);}*/
+
+@media only screen and (max-width : 480px) {
+#reflectText h4 {font-size: 10px;}
+#reflectText {padding: 40px;}
+.btn float: none!important;

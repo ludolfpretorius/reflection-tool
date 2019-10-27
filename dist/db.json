@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "John",
+            "email": "john@gmail.com",
+            "password": "cookies",
+            "entries": [
+                {
+                    "message": "Jonny's notes",
+                    "date": "Sun Oct 13 2019"
+                }
+            ],
+            "joined": "new Date()"
+        },
+        {
+            "id": "2",
+            "name": "Jen",
+            "email": "jen@gmail.com",
+            "password": "cake",
+            "entries": [
+                {
+                    "message": "Jens note",
+                    "date": "Sun Oct 13 2019"
+                },
+                {
+                    "message": "Jenny second note",
+                    "date": "Sun Oct 13 2019"
+                }
+            ],
+            "joined": "new Date()"
+        },
+        {
+            "id": "3",
+            "name": "Ludy",
+            "email": "test@test.com",
+            "password": "1234",
+            "entries": [
+                {
+                    "message": "zxzxzx",
+                    "date": "Sun Oct 13 2019"
+                },
+                {
+                    "message": "Ludyyyyy's notes",
+                    "date": "Sun Oct 13 2019"
+                }
+            ],
+            "joined": "2019-10-13T08:35:05.567Z"
+        },
+        {
+            "id": "3",
+            "name": "Sheyda",
+            "email": "test@test.com",
+            "password": "123",
+            "entries": [
+                {
+                    "message": "Sheyda's note",
+                    "date": "Sun Oct 13 2019"
+                }
+            ],
+            "joined": "2019-10-13T18:58:35.539Z"
+        }
+    ]
+}
